@@ -1,5 +1,5 @@
 import * as React from "react";
-const SVGComponent = (props) => (
+const MidjourneyImage1 = (props) => (
   <svg
     width={1728}
     height={1071}
@@ -46,4 +46,4 @@ const SVGComponent = (props) => (
     </defs>
   </svg>
 );
-export default SVGComponent;
+export default MidjourneyImage1;
