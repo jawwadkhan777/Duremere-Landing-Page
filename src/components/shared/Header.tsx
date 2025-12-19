@@ -6,7 +6,7 @@ import { Menubar, MenubarMenu, MenubarTrigger } from '../ui/menubar';
 
 const Header = () => {
   return (
-    <div className='mt-20 flex flex-col items-center gap-15'>
+    <div className='mt-20 flex flex-col items-center gap-15 pb-10'>
       {/* sub section 1 */}
       <div className='flex flex-col items-center gap-10'>
         {/* strip part */}

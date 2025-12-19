@@ -9,7 +9,7 @@ import CustomButton from "./CustomButton";
 const Navbar = () => {
   
   return (
-    <div className="flex items-center justify-center mt-5">
+    <div className="flex items-center justify-center pt-5">
       <div className="w-2/3 flex flex-row  justify-between p-3 bg-[#17191C] shadow-xs shadow-white  rounded-[500]">
         {/* logo part */}
         <div className="flex items-center gap-2">
