@@ -2,8 +2,10 @@ import Shape1 from "@/components/csv/Shape1"
 import Shape2 from "@/components/csv/Shape2"
 import Shape3 from "@/components/csv/Shape3"
 import Shape4 from "@/components/csv/Shape4"
+import { AboutData, AdvertismentData, FooterData, HeaderData, JourneyData, NavbarData, ServicesData } from "@/types"
 
-export const navbarMenuData = {
+
+export const navbarMenuData: NavbarData = {
     logoText: "Duremere.",
     menuItems: [
         {item: "What We Do?"},
@@ -14,7 +16,7 @@ export const navbarMenuData = {
 }
 
 
-export const headerData = {
+export const headerData: HeaderData = {
     strip: {
         part1: "AI & Software",
         part2: "Solutions Built for the GCC",
@@ -41,7 +43,7 @@ export const headerData = {
 }
 
 
-export const servicesData = {
+export const servicesData: ServicesData = {
     heading: {
         part1: "We Design ",
         part2: "Enterprise-Grade Software ",
@@ -74,7 +76,7 @@ export const servicesData = {
     ]
 }
 
-export const aboutData = {
+export const aboutData: AboutData = {
     heading: "Your Digital Transformation Partner in Saudi Arabia & Dubai",
     text: "We deliver AI solutions in Saudi Arabia and custom software in Dubai, driving secure and scalable digital transformation across the GCC.",
     cardsData: {
@@ -86,23 +88,45 @@ export const aboutData = {
     }    
 }
 
-export const advertismentData = {
+export const advertismentData: AdvertismentData = {
     mainHeading: "Start Your Digital Transformation in GCC",
     subText1: {
         heading: "78%",
         text: "Growth Rate"
     },
-    subHeading: "Let’s turn your idea into reality with custom AI solutions and enterprise-grade software designed for the Saudi & Dubai markets.",
+    subHeading: {
+        part1: "Let’s ",
+        part2: "Turn Your Idea Into Reality ",
+        part3: "With Custom ",
+        part4: "AI Solutions And Enterprise-Grade Software ",
+        part5: "designed for the Saudi & Dubai markets.",
+        
+    },
     subText2: "Ready to Build Smarter?"
 
 }
 
 
-export const journeyData = {
-    heading: "Explore some of the transformative journeys in GCC"
+export const journeyData: JourneyData = {
+    heading: "Explore Some Of The Transformative Journeys In GCC",
+    gridtext: {
+        grid1: {heading: "Sapling (Kallidus)", text: "US HR Tech Platform's Engineering Scale-Up Drives $10M PE Acquisition"},
+        grid2: {
+            heading: "Intellirent", text: "US PropTech Startup's AI Revolution Cuts Manual Work 98%"
+        },
+        grid3: {
+            heading: "HoneyBricks", text: "Blockchain Real Estate Platform Manages $5M+ Investments Before Acquisition them."
+        },
+        grid4: {
+            heading: "X-QUIC", text: "Hospitality AI Platform Reconciles $300M+ in OTA Commissions Automatically"
+        },
+        grid5: {
+            heading: "Recurate", text: "US Fashion Resale Platform Scales to 100K Monthly Transactions"
+        },
+    }
 }
 
-export const footerData = {
+export const footerData: FooterData = {
     heading: "What's your biggest challenge right now?",
     text: "Let's talk and find out why the person who referred us rates us so highly.",
     callHeading: "Call us",

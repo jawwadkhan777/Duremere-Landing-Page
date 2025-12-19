@@ -35,7 +35,7 @@ const Navbar = () => {
           <Menubar className="border-none bg-transparent flex gap-7">
             {navbarMenuData.menuItems.map((item, index) => (
               <MenubarMenu key={index}>
-                <MenubarTrigger className="cursor-pointer bg-transparent text-xs font-normal hover:bg-transparent">
+                <MenubarTrigger className="cursor-pointer hover:bg-none bg-transparent text-xs font-normal hover:bg-transparent">
                   {item.item}
                 </MenubarTrigger>
               </MenubarMenu>
@@ -57,7 +57,7 @@ const Navbar = () => {
 
             <DropdownMenuContent
               align="end"
-              className="w-44 bg-[#17191C] border border-white/10"
+              className="w-44 bg-[#17191C] text-white border border-white/10"
             >
               {navbarMenuData.menuItems.map((item, index) => (
                 <DropdownMenuItem key={index}>
