@@ -6,13 +6,39 @@ import CustomButton from './CustomButton'
 const Advertisment = () => {
   return (
     <div className='flex flex-col gap-10'>
-        <div className='p-20'>
-            <div className='text-6xl font-bold bg-linear-to-b from-gray-400 to-white bg-clip-text text-transparent'>{advertismentData.mainHeading}</div>
-        <div>
-            <h1 className='text-8xl font-bold text-dark'>{advertismentData.subText1.heading}</h1>
-            <p className='text-white'>{advertismentData.subText1.text}</p>
-        </div>
-        </div>
+        <div className="px-4 sm:px-8 md:px-20 py-10 md:py-20 text-center md:text-left">
+
+  <div className="
+    text-3xl sm:text-4xl md:text-6xl
+    font-bold
+    bg-linear-to-b from-gray-400 to-white
+    bg-clip-text text-transparent
+  ">
+    {advertismentData.mainHeading}
+  </div>
+
+  <div className="mt-4">
+    <h1 className="
+      text-4xl sm:text-5xl md:text-8xl
+      font-bold
+      text-dark
+      leading-tight
+    ">
+      {advertismentData.subText1.heading}
+    </h1>
+
+    <p className="
+      text-sm sm:text-base
+      text-white
+      max-w-2xl
+      mt-2
+    ">
+      {advertismentData.subText1.text}
+    </p>
+  </div>
+
+</div>
+
 
         <div className="relative w-full h-[800] overflow-hidden">
             <Image src="/images/advertismentImage1.png" alt='image' className='mx-auto h-auto w-full max-w-480 object-top' width={200} height={200} />

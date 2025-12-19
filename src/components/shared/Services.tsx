@@ -6,8 +6,8 @@ const Services = () => {
   return (
     <div className="flex flex-col gap-25 pb-10">
       {/* sub section 1 */}
-      <div className="mt-20 pl-10 w-2/3">
-        <h1 className="font-normal text-4xl text-gray-600">
+      <div className="mt-20 pl-10 md:w-2/3">
+        <h1 className="font-normal md:text-4xl text-2xl text-gray-600">
             <span>{servicesData.heading.part1}</span>
             <span className="text-white">{servicesData.heading.part2}</span>
             <span>{servicesData.heading.part3}</span>
@@ -17,7 +17,7 @@ const Services = () => {
         </h1>
       </div>
       {/* sub section 2 */}
-      <div className="pl-10 grid grid-cols-3 w-2/3 gap-y-10 gap-x-4 items-end">
+      <div className="pl-10 grid md:grid-cols-3 grid-cols-1 w-2/3 gap-y-10 gap-x-4 items-end">
         {servicesData.services.map((item) => (
           <div key={item.id} className="flex flex-col gap-15">
             {/*  id */}

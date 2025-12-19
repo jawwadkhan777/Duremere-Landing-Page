@@ -6,21 +6,49 @@ import { Menubar, MenubarMenu, MenubarTrigger } from '../ui/menubar';
 
 const Header = () => {
   return (
-    <div className='mt-20 flex flex-col items-center gap-15 pb-10'>
+    <div className='mt-20 flex flex-col items-center md:gap-15 gap-10 pb-10 p-5'>
       {/* sub section 1 */}
       <div className='flex flex-col items-center gap-10'>
-        {/* strip part */}
-      <div className='flex justify-center items-center gap-2 shadow-md shadow-dark bg-white/20 rounded-[60] pl-3 pr-5 p-1'>
-        <div className='border-2 border-dark/80 rounded-[60] bg-linear-to-b from-bgGradientDark/0 to-bgGradientLite pt-0.5 pb-0.5 pl-5 pr-5'>
-          <span className='font-normal text-md'>{headerData.strip.part1}</span>
-        </div>
-        <span className='font-normal text-md'>{headerData.strip.part2}</span>
-        <Icon />
-      </div>
+      {/* strip part */}
+<div className="
+  flex flex-wrap items-center justify-center
+  gap-1 sm:gap-2
+  px-2 sm:px-3 py-1
+  bg-white/20
+  shadow-md shadow-dark
+  rounded-full
+  max-w-full
+">
+
+  <div className="
+    border border-dark/80
+    rounded-full
+    bg-linear-to-b from-bgGradientDark/0 to-bgGradientLite
+    px-3 sm:px-4 md:px-5
+    py-0.5
+    text-xs sm:text-sm md:text-md
+    whitespace-nowrap
+  ">
+    <span className="font-normal">
+      {headerData.strip.part1}
+    </span>
+  </div>
+
+  <span className="
+    font-normal
+    text-xs sm:text-sm md:text-md
+    text-center
+  ">
+    {headerData.strip.part2}
+  </span>
+
+  <Icon className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+</div>
+
       {/* content part */}
       <div className='flex flex-col items-center gap-5'>
-        <h1 className='w-2/3 font-medium text-6xl text-gray-50/70 text-center leading-20'>{headerData.heading}</h1>
-        <p className='w-2/3 font-normal text-lg text-center text-gray-300 leading-9'>{headerData.text1}</p>
+        <h1 className='md:w-2/3 font-medium md:text-6xl text-3xl text-gray-50/70 text-center md:leading-20'>{headerData.heading}</h1>
+        <p className='md:w-2/3 font-normal md:text-lg text-sm text-center text-gray-300 md:leading-9'>{headerData.text1}</p>
       </div>
       {/* button part */}
       <div>
@@ -29,31 +57,50 @@ const Header = () => {
       </div>
 
       {/* sub section 2 */}
-      <div className='flex flex-col justify-center items-center gap-2'>
-        <p className='text-gray-500'>{headerData.text2}</p>
-        {
-          <Menubar className='border-none bg-transparent flex gap-6'>
-            {
-              headerData.logosWrap.map((item, index)=> {
-                const Logo = item.logoImg;
-                return(
-                  (
-                <MenubarMenu key={index}>
-                  <MenubarTrigger className="cursor-pointer bg-transparent hover:bg-none text-sm font-normal text-[16px] flex gap-1 items-center">
-                    <Logo />
-                    <span className='text-gray-400 font-bold'>
-                    {item.logoText}
+<div className="flex flex-col items-center justify-center gap-2 sm:gap-3 px-4 text-center">
 
-                    </span>
-                  </MenubarTrigger>
-                </MenubarMenu>
-              )
-                )
-              })
-            }
-          </Menubar>
-        }
-      </div>
+  {/* description text */}
+  <p className="text-gray-500 text-xs sm:text-sm md:text-lg max-w-xl">
+    {headerData.text2}
+  </p>
+
+  {/* logos / menu */}
+  <Menubar
+    className="
+      border-none bg-transparent
+      flex flex-wrap justify-center
+      gap-3 sm:gap-4 md:gap-6
+    "
+  >
+    {headerData.logosWrap.map((item, index) => {
+      const Logo = item.logoImg;
+
+      return (
+        <MenubarMenu key={index}>
+          <MenubarTrigger
+            className="
+              cursor-pointer
+              bg-transparent hover:bg-transparent
+              flex items-center gap-1.5
+              text-xs sm:text-sm md:text-base
+              px-2 py-1
+            "
+          >
+            {/* Logo */}
+            <Logo className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+
+            {/* Text */}
+            <span className="text-gray-400 font-semibold whitespace-nowrap">
+              {item.logoText}
+            </span>
+          </MenubarTrigger>
+        </MenubarMenu>
+      );
+    })}
+  </Menubar>
+
+</div>
+
     </div>
   )
 }

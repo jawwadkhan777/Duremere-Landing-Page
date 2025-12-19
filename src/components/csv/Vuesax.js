@@ -1,5 +1,5 @@
 import * as React from "react";
-const SVGComponent = (props) => (
+const Vuesax = (props) => (
   <svg
     width={18}
     height={18}
@@ -28,4 +28,4 @@ const SVGComponent = (props) => (
     />
   </svg>
 );
-export default SVGComponent;
+export default Vuesax;
