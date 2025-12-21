@@ -1,6 +1,7 @@
 import { footerData } from '@/data/mockdata'
 import React from 'react'
 import Logomark from '../csv/Logomark'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -31,6 +32,8 @@ const Footer = () => {
       {/* part 2 */}
       <div className='text-dark md:text-9xl text-5xl font-bold z-10 underline decoration-2 underline-offset-8'>{footerData.boldHeading}</div>
 
+      {/* <Image src={"/images/footerImage.png"} alt='image' className='absolute w-full -rotate-20' width={250} height={100} /> */}
+
       {/* part 3 */}
       <div className='text-black flex flex-col gap-2 mt-4 z-10'>
         <div className="flex items-center gap-2">
@@ -45,7 +48,11 @@ const Footer = () => {
 
       {/* part 4 */}
       <div className='text-black mt-6 md:text-sm text-xs z-10'>
-        {footerData.copyrigthText}
+        <span className='font-medium'>{footerData.copyrigthText.part1}</span>
+        <span className='text-gray-500'>{footerData.copyrigthText.part2}</span>
+        <span className='text-dark'>{footerData.copyrigthText.part3}</span>
+        <span className='text-gray-500'>{footerData.copyrigthText.part4}</span>
+        <span className='text-dark'>{footerData.copyrigthText.part5}</span>
       </div>
 
     </div>

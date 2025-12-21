@@ -46,9 +46,15 @@ const Header = () => {
 </div>
 
       {/* content part */}
-      <div className='flex flex-col items-center gap-5'>
-        <h1 className='md:w-2/3 font-medium md:text-6xl text-3xl text-gray-50/70 text-center md:leading-20'>{headerData.heading}</h1>
-        <p className='md:w-2/3 font-normal md:text-lg text-sm text-center text-gray-300 md:leading-9'>{headerData.text1}</p>
+      <div className='flex flex-col items-center gap-5 md:w-2/3'>
+        <h1 className='font-medium md:text-6xl text-3xl text-gray-50/70 text-center md:leading-20'>{headerData.heading}</h1>
+        <p className='font-normal md:text-lg text-sm text-center text-gray-300 md:leading-9'>
+          <span>{headerData.text1.part1}</span>
+          <span className='font-medium text-white'>{headerData.text1.part2}</span>
+          <span>{headerData.text1.part3}</span>
+          <span className='font-medium text-white'>{headerData.text1.part4}</span>
+          <span>{headerData.text1.part5}</span>
+        </p>
       </div>
       {/* button part */}
       <div>
@@ -87,7 +93,7 @@ const Header = () => {
             "
           >
             {/* Logo */}
-            <Logo className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+            <Logo />
 
             {/* Text */}
             <span className="text-gray-400 font-semibold whitespace-nowrap">

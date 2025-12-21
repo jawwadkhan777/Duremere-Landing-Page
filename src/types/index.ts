@@ -23,10 +23,19 @@ export interface HeaderStrip {
   part2: string;
 }
 
+export interface Text1 {
+  part1: string;
+  part2: string;
+  part3: string;
+  part4: string;
+  part5: string;
+}
+
+
 export interface HeaderData {
   strip: HeaderStrip;
   heading: string;
-  text1: string;
+  text1: Text1;
   text2: string;
   logosWrap: LogoShape[];
 }
@@ -110,6 +119,14 @@ export interface JourneyData {
 }
 
 // Footer
+export interface CopyRightText {
+  part1: string;
+  part2: string;
+  part3: string;
+  part4: string;
+  part5: string;
+}
+
 export interface FooterData {
   heading: string;
   text: string;
@@ -120,5 +137,5 @@ export interface FooterData {
   boldHeading: string;
   logoHeading: string;
   logoText: string;
-  copyrigthText: string;
+  copyrigthText: CopyRightText;
 }

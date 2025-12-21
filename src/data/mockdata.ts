@@ -22,7 +22,13 @@ export const headerData: HeaderData = {
         part2: "Solutions Built for the GCC",
     },
     heading: "Custom Software & AI Solutions for GCC Digital Era",
-    text1: "We design future-ready platforms, AI-powered tools, and scalable backend systems that help enterprises, startups, and innovators across the GCC thrive in the digital era.",
+    text1: {
+        part1: "We design future-ready platforms, ",
+        part2: "AI-powered tools",
+        part3: ", and ",
+        part4: "scalable backend systems",
+        part5: " that help enterprises, startups, and innovators across the GCC thrive in the digital era.",
+    },
     text2: "Trusted by 4,000+ companies",
     logosWrap: [
         {
@@ -136,5 +142,11 @@ export const footerData: FooterData = {
     boldHeading: "Let’s Talk!",
     logoHeading: "Duremere.",
     logoText: "Empowering GCC enterprises with secure, future-ready software and AI solutions.",
-    copyrigthText: "© 2025 Duremere AI Solutions. All Rights Reserved. | Privacy Policy | Terms of Service"
+    copyrigthText: {
+        part1: "© 2025 Duremere AI Solutions.",
+        part2: " All Rights Reserved. | ",
+        part3: "Privacy Policy",
+        part4: " | ",
+        part5: "Terms of Service",
+    },
 }

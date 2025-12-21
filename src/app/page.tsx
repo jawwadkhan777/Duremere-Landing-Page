@@ -12,7 +12,7 @@ export default function Home() {
         <Navbar />
         <Header />
       </div>
-      <div className="bg-[url('/images/services-bg-image.png')] bg-no-repeat bg-right md:bg-size-[auto_200%] bg-size-[auto_100%]">
+      <div className="bg-[url('/images/services-bg-image.png')] bg-no-repeat md:bg-right bg-bottom-right md:bg-size-[auto_200%] bg-size-[auto_90%]">
         <Services />
 
       </div>

@@ -35,7 +35,7 @@ const CaseStudiesGrid = ()=>  {
 
         {/* Small Accent Card */}
         <div className="relative rounded-2xl bg-white p-6 flex flex-col justify-end overflow-hidden">
-          <Image src={'/images/aboutImage2.png'} alt='image' className='absolute inset-0 object-cover -top-10 -left-20' width={250} height={100} />
+          <Image src={'/images/aboutImage2.png'} alt='image' className='absolute inset-0 object-cover -top-5 left-88' width={180} height={100} />
           <h3 className="relative text-xl font-semibold text-neutral-900">{journeyData.gridtext.grid4.heading}</h3>
           <p className="relative mt-2 text-sm text-neutral-600">
             {journeyData.gridtext.grid4.text}
@@ -44,7 +44,7 @@ const CaseStudiesGrid = ()=>  {
 
         {/* Bottom Full Card */}
         <div className="relative rounded-2xl bg-white p-6 sm:p-8 lg:col-span-3 min-h-40 flex flex-col justify-center items-end overflow-hidden">
-          <Image src={'/images/aboutImage3.png'} alt='image' className='absolute inset-0 object-cover -top-15 -left-5 -rotate-25' width={300} height={100} />
+          <Image src={'/images/aboutImage3.png'} alt='image' className='absolute inset-0 object-cover -top-15 -left-5 -rotate-25 hidden md:block' width={300} height={100} />
           <div>
             <h2 className="relative text-2xl sm:text-3xl font-semibold text-neutral-900">
             {journeyData.gridtext.grid5.heading}
