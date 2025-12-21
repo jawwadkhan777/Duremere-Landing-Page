@@ -7,7 +7,19 @@ const Footer = () => {
   return (
     <div className="relative overflow-hidden">
       {/* background image */}
-      <div className="absolute inset-0 md:bg-[url('/images/footerImage.png')] -right-120 -bottom-170 bg-right bg-size-[auto_50%] bg-no-repeat -rotate-40 z-0" />
+      <div className="
+      absolute
+      inset-0
+      hidden lg:block
+      bg-[url('/images/footerImage.png')]
+      bg-no-repeat
+      bg-right
+      rotate-[-35deg]
+      right-[-330]
+      bottom-[-680]
+      bg-size-[auto_45%]
+      z-0
+    " />
 
       <div className='md:p-20 px-8 py-10 bg-white rounded-t-[60] flex flex-col md:gap-5 gap-10'>
 
@@ -32,7 +44,7 @@ const Footer = () => {
       {/* part 2 */}
       <div className='text-dark md:text-9xl text-5xl font-bold z-10 underline decoration-2 underline-offset-8'>{footerData.boldHeading}</div>
 
-      {/* <Image src={"/images/footerImage.png"} alt='image' className='absolute w-full -rotate-20' width={250} height={100} /> */}
+      {/* <Image src={"/images/footerImage.png"} alt='image' className='absolute w-full left-[0%] -rotate-20' width={250} height={100} /> */}
 
       {/* part 3 */}
       <div className='text-black flex flex-col gap-2 mt-4 z-10'>

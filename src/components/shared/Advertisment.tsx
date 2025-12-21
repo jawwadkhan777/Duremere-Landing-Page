@@ -6,7 +6,7 @@ import CustomButton from "./CustomButton";
 const Advertisment = () => {
   return (
     <div className="flex flex-col">
-      <div className="px-4 sm:px-8 md:px-20 py-10 md:py-20 text-center md:text-left">
+      <div className="px-4 sm:px-8 md:px-20 pt-10 md:pt-20 text-center md:text-left">
         <div
           className="
     text-3xl sm:text-4xl md:text-6xl
@@ -51,7 +51,22 @@ const Advertisment = () => {
           width={200}
           height={200}
         />
+              {/* Gradient Overlay */}
+  <div
+    className="
+      absolute
+      bottom-0
+      left-0
+      w-full
+      h-[40%]
+      bg-linear-to-b
+      from-transparent
+      to-black
+      z-10
+    "
+  />
       </div>
+      
 
       <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 px-8 md:px-20 pb-10 md:py-20 py-10">
         {/* Heading */}
